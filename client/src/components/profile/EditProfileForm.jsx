@@ -57,7 +57,7 @@ const EditProfileForm = ({
 
       <div className="w-full max-w-lg rounded-2xl bg-white p-8 shadow-xl">
 
-        <h2 className="mb-6 text-2xl font-bold text-blue-600">
+        <h2 className="mb-6 text-2xl font-bold text-blue-600 ">
           Edit Profile
         </h2>
 
@@ -115,7 +115,7 @@ const EditProfileForm = ({
             <button
               type="button"
               onClick={onClose}
-              className="rounded-lg border px-5 py-2 hover:bg-gray-100"
+              className="rounded-lg border px-5 py-2 hover:bg-gray-100 cursor-pointer"
             >
               Cancel
             </button>
@@ -123,7 +123,7 @@ const EditProfileForm = ({
             <button
               type="submit"
               disabled={loading}
-              className="rounded-lg bg-blue-600 px-6 py-2 text-white hover:bg-blue-700 disabled:opacity-50"
+              className="rounded-lg bg-blue-600 px-6 py-2 text-white cursor-pointer hover:bg-blue-700 disabled:opacity-50"
             >
               {loading ? "Saving..." : "Save Changes"}
             </button>

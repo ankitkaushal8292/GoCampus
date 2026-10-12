@@ -41,14 +41,14 @@ const Navbar = () => {
 
           <button
             onClick={openLogin}
-            className="font-medium text-gray-700 transition-colors hover:text-blue-600"
+            className="font-medium text-gray-700 transition-colors hover:text-blue-600 cursor-pointer"
           >
             Login
           </button>
 
           <button
             onClick={openRegister}
-            className="rounded-lg bg-blue-600 px-5 py-2 font-medium text-white transition-colors hover:bg-blue-700"
+            className="rounded-lg bg-blue-600 px-5 cursor-pointer py-2 font-medium text-white transition-colors hover:bg-blue-700"
           >
             Register
           </button>

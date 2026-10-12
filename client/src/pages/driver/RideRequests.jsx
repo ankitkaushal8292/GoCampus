@@ -134,7 +134,7 @@ const RideRequests = () => {
                         onClick={() =>
                           handleReject(request._id)
                         }
-                        className="rounded-lg bg-red-600 px-5 py-3 text-white hover:bg-red-700"
+                        className="rounded-lg cursor-pointer bg-red-600 px-5 py-3 text-white hover:bg-red-700"
                       >
                         Reject
                       </button>

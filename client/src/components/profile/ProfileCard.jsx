@@ -75,7 +75,7 @@ const ProfileCard = ({
 
           <button
             onClick={onEdit}
-            className="mt-10 flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-700"
+            className="mt-10 flex items-center cursor-pointer gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-700"
           >
             <FaEdit />
             Edit Profile

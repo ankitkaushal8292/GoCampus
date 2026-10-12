@@ -26,7 +26,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-64 min-h-screen bg-white shadow-lg flex flex-col">
+    <aside className="sticky top-0 h-screen w-64 shrink-0 overflow-hidden bg-white shadow-lg flex flex-col">
       {/* Logo */}
       <div className="h-20 flex items-center justify-center border-b">
         <h1 className="text-3xl font-bold text-blue-600">GoCampus</h1>
@@ -148,7 +148,7 @@ const Sidebar = () => {
       <div className="p-4 border-t">
         <button
           onClick={handleLogout}
-          className="flex w-full items-center justify-center gap-3 rounded-lg bg-red-500 p-3 text-white hover:bg-red-600 transition"
+          className="flex cursor-pointer w-full items-center justify-center gap-3 rounded-lg bg-red-500 p-3 text-white hover:bg-red-600 transition"
         >
           <FaSignOutAlt />
           Logout

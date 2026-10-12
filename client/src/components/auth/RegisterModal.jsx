@@ -96,28 +96,34 @@ const RegisterModal = () => {
   };
   return (
 <div
-  className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4 overflow-y-auto"
+  className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/40 p-4 backdrop-blur-sm"
   onClick={closeRegister}
->      <div className="relative w-full max-w-lg rounded-2xl bg-white p-8 shadow-2xl"
- onClick={(e) => e.stopPropagation()}>
+>      
+<div
+  className="relative w-full max-w-lg rounded-2xl bg-white p-6 shadow-2xl"
+  onClick={(e) => e.stopPropagation()}
+>
+
         {/* Close Button */}
         <button
           onClick={closeRegister}
-          className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-black"
+          className="absolute cursor-pointer top-4 right-4 text-2xl text-gray-500 hover:text-black"
         >
           ✕
         </button>
 
-        <h2 className="text-3xl font-bold text-center text-blue-600">
-          Create Account
-        </h2>
+       <h2 className="text-2xl font-bold text-center text-blue-600 ">
+  Create Account
+</h2>
 
-        <p className="mt-2 text-center text-gray-500">Join GoCampus today</p>
+        <p className="mt-1 text-center text-sm text-gray-500">
+  Join GoCampus today
+</p>
 
-        <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+        <form onSubmit={handleSubmit} className="mt-5 space-y-3">
           {/* Name */}
           <div>
-            <label className="block mb-2 font-medium">Full Name</label>
+            <label className="mb-1 block text-sm font-medium">Full Name</label>
 
             <input
               type="text"
@@ -138,7 +144,7 @@ const RegisterModal = () => {
 
           {/* Email */}
           <div>
-            <label className="block mb-2 font-medium">College Email</label>
+            <label className="mb-1 block text-sm font-medium">College Email</label>
 
             <input
               type="email"
@@ -159,7 +165,7 @@ const RegisterModal = () => {
 
           {/* Phone */}
           <div>
-            <label className="block mb-2 font-medium">Phone Number</label>
+            <label className="mb-1 block text-sm font-medium">Phone Number</label>
 
             <input
               type="text"
@@ -180,13 +186,13 @@ const RegisterModal = () => {
 
           {/* Role */}
           <div>
-            <label className="block mb-2 font-medium">Register As</label>
+            <label className="mb-1 block text-sm font-medium">Register As</label>
 
             <select
               name="role"
               value={formData.role}
               onChange={handleChange}
-              className="w-full rounded-lg border px-4 py-3 focus:border-blue-500 focus:outline-none"
+              className="w-full cursor-pointer rounded-lg border px-4 py-3 focus:border-blue-500 focus:outline-none"
             >
               <option value="student">Student</option>
               <option value="driver">Driver</option>
@@ -197,7 +203,7 @@ const RegisterModal = () => {
           {formData.role === "driver" && (
             <>
               <div>
-                <label className="block mb-2 font-medium">Vehicle Number</label>
+                <label className="mb-1 block text-sm font-medium">Vehicle Number</label>
 
                 <input
                   type="text"
@@ -207,7 +213,7 @@ const RegisterModal = () => {
               </div>
 
               <div>
-                <label className="block mb-2 font-medium">Vehicle Type</label>
+                <label className="mb-1 block text-sm font-medium">Vehicle Type</label>
 
                 <select className="w-full rounded-lg border px-4 py-3 focus:border-blue-500 focus:outline-none">
                   <option>Bike</option>
@@ -219,7 +225,7 @@ const RegisterModal = () => {
 
           {/* Password */}
           <div>
-            <label className="block mb-2 font-medium">Password</label>
+            <label className="mb-1 block text-sm font-medium">Password</label>
 
             <div className="relative">
               <input
@@ -240,7 +246,7 @@ const RegisterModal = () => {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600"
               >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                {showPassword ? <FaEyeSlash className="cursor-pointer" /> : <FaEye className="cursor-pointer" />}
               </button>
             </div>
 
@@ -251,7 +257,7 @@ const RegisterModal = () => {
 
           {/* Confirm Password */}
           <div>
-            <label className="block mb-2 font-medium">Confirm Password</label>
+            <label className="mb-1 block text-sm font-medium">Confirm Password</label>
 
             <div className="relative">
               <input
@@ -272,7 +278,7 @@ const RegisterModal = () => {
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600"
               >
-                {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                {showConfirmPassword ? <FaEyeSlash className="cursor-pointer"/> : <FaEye className="cursor-pointer" />}
               </button>
             </div>
 
@@ -285,13 +291,13 @@ const RegisterModal = () => {
 
           <button
             type="submit"
-            className="w-full rounded-lg bg-blue-600 py-3 text-white hover:bg-blue-700 transition"
+            className="w-full rounded-lg bg-blue-600 py-3 text-white hover:bg-blue-700 transition cursor-pointer"
           >
             Create Account
           </button>
         </form>
 
-        <p className="mt-6 text-center">
+        <p className="mt-4 text-center text-sm">
           Already have an account?{" "}
           <button
             type="button"
@@ -299,7 +305,7 @@ const RegisterModal = () => {
               closeRegister();
               openLogin();
             }}
-            className="font-semibold text-blue-600 hover:underline"
+            className="font-semibold text-blue-600 hover:underline cursor-pointer"
           >
             Login
           </button>

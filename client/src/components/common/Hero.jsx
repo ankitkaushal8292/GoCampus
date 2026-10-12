@@ -1,4 +1,5 @@
 import { useModal } from "../../context/ModalContext";
+import campusImage from "../../assets/images/campus.png";
 
 const Hero = () => {
   const { openLogin, openRegister } = useModal();
@@ -27,14 +28,14 @@ const Hero = () => {
 
             <button
               onClick={openRegister}
-              className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 transition hover:bg-gray-100"
+              className="rounded-lg cursor-pointer bg-white px-6 py-3 font-semibold text-blue-600 transition hover:bg-gray-100"
             >
               Get Started
             </button>
 
             <button
               onClick={openLogin}
-              className="rounded-lg border border-white px-6 py-3 transition hover:bg-white hover:text-blue-600"
+              className="rounded-lg cursor-pointer border border-white px-6 py-3 transition hover:bg-white hover:text-blue-600"
             >
               Login
             </button>
@@ -45,15 +46,15 @@ const Hero = () => {
 
         {/* Right */}
 
-        <div className="mt-12 flex flex-1 justify-center lg:mt-0">
+   
+<div className="mt-10 flex flex-1 items-center justify-center lg:mt-0">
+  <img
+    src={campusImage}
+    alt="Students sharing a ride on campus"
+    className="h-[350px] w-full max-w-[450px] object-contain"
+  />
+</div>
 
-          <img
-            src="https://illustrations.popsy.co/white/digital-nomad.svg"
-            alt="Hero"
-            className="w-[450px]"
-          />
-
-        </div>
 
       </div>
     </section>

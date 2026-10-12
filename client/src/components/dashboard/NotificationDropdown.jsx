@@ -79,7 +79,7 @@ const NotificationDropdown = () => {
         }
         className="relative text-2xl text-gray-600 hover:text-blue-600 transition"
       >
-        <FaBell />
+        <FaBell  className="cursor-pointer"/>
 
         {unreadCount > 0 && (
           <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
@@ -96,7 +96,7 @@ const NotificationDropdown = () => {
 
           <div className="border-b p-4">
 
-            <h2 className="text-lg font-bold">
+            <h2 className="text-lg font-bold ">
               Notifications
             </h2>
 

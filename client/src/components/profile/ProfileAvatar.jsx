@@ -27,7 +27,7 @@ const ProfileAvatar = ({
           disabled={loading}
           className="absolute bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-gray-400"
         >
-          {loading ? "..." : <FaCamera />}
+          {loading ? "..." : <FaCamera className="cursor-pointer" />}
         </button>
 
       </div>

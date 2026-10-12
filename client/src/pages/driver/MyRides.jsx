@@ -144,14 +144,14 @@ const MyRides = () => {
                         setSelectedRide(ride);
                         setShowEditModal(true);
                       }}
-                      className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
+                      className="rounded-lg cursor-pointer bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
                     >
                       Edit
                     </button>
 
                     <button
                       onClick={() => handleDeleteRide(ride._id)}
-                      className="rounded-lg bg-red-600 px-4 py-2 text-white hover:bg-red-700"
+                      className="rounded-lg cursor-pointer bg-red-600 px-4 py-2 text-white hover:bg-red-700"
                     >
                       Delete
                     </button>

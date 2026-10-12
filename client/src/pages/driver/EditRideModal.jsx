@@ -100,7 +100,7 @@ const EditRideModal = ({ ride, onClose, onUpdate }) => {
 
             <button
               type="submit"
-              className="px-5 py-2 rounded-lg bg-blue-600 text-white"
+              className="px-5 cursor-pointer py-2 rounded-lg bg-blue-600 text-white"
             >
               Update Ride
             </button>

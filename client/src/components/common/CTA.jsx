@@ -20,14 +20,14 @@ const CTA = () => {
 
           <button
             onClick={openRegister}
-            className="rounded-lg bg-blue-600 px-7 py-3 text-white transition hover:bg-blue-700"
+            className="rounded-lg cursor-pointer bg-blue-600 px-7 py-3 text-white transition hover:bg-blue-700"
           >
             Create Account
           </button>
 
           <button
             onClick={openLogin}
-            className="rounded-lg border border-blue-600 px-7 py-3 text-blue-600 transition hover:bg-blue-600 hover:text-white"
+            className="rounded-lg cursor-pointer border border-blue-600 px-7 py-3 text-blue-600 transition hover:bg-blue-600 hover:text-white"
           >
             Login
           </button>

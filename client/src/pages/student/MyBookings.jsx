@@ -85,7 +85,7 @@ const MyBookings = () => {
 
                 <button
                   onClick={() => handleLeaveRide(ride._id)}
-                  className="mt-4 rounded-lg bg-red-600 px-5 py-2 text-white hover:bg-red-700"
+                  className="mt-4 cursor-pointer rounded-lg bg-red-600 px-5 py-2 text-white hover:bg-red-700"
                 >
                   Leave Ride
                 </button>
